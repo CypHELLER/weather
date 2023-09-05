@@ -1,0 +1,51 @@
+body {
+    justify-content: center;
+    height: 100vh;
+    background-color: grey;
+    align-items: center;
+    display: flex;
+    margin: 0;
+    font-family: 'Neucha', cursive;
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+}
+
+.template {
+    opacity: 0.75;
+    background: rgb(46, 45, 45);
+    padding: 20px;
+    border-radius: 25px;
+    width: 100%;
+    max-width: 450px;
+    margin: 2px;
+    color: white;
+}
+
+h1.temp {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.desc {
+    text-transform: capitalize;
+    margin-left: 10px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.fakeweather {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.fakeweather:after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
